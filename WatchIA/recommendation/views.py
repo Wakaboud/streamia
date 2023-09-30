@@ -42,7 +42,7 @@ def get_movie_poster(movie_title):
         return str(e)
 
 # Configurez votre clé API OpenAI ici
-openai.api_key = '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'
+openai.api_key = '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'
 
 def recommend_movies(request):
     if request.method == 'POST':
