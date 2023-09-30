@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
+
+*{
+    margin : 0;
+    padding: 0;
+    text-decoration: none;/* ... Autres styles CSS ... */
+
+}
+
+
+body {
+    background-color: #FFC226;
+    display: flex; /* Centrage horizontal */
+    justify-content: center;
+    height: 100vh;
+    margin: 5%;
+}
+
+
+.head {
+    display: flex;
+    position: absolute;
+    top: 3%;
+    text-align: center;
+    justify-content: center;
+    left: 30%;
+}
+
+.logo {
+    float: left;
+    width: 163px;
+    height: 180px;
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font: bold;
+    font-size: 82px;
+    color: #FFF;
+    font-weight: 900;
+    line-height: 110%; /* 121px */
+    margin-top: 8%;
+}
+
+.S {
+    font-family: 'Poppins', sans-serif;
+    font: bold;
+    font-size: 94px;
+    color: #FFF;
+    font-weight: 900;
+    line-height: 110%; /* 121px */
+    margin-top: 7%;
+}
+
+.resultat {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.movie {
+    text-align: left; /* Aligner le texte à gauche */
+    display: flex;
+    margin-bottom: 2%;
+}
+
+
+.title {
+    color: #fff;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 200% */
+}
+
+.description {
+    color: #fff;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 187.5% */
+    max-width: 1200px;
+}
+
+.poster {
+    float: left;
+    width: 127px;
+    height: 178px;
+    flex-shrink: 0;
+    margin-right: 10%;
+}

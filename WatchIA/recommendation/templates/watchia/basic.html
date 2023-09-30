@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+<head>
+    <title>Watch.IA</title>
+</head>
+<body>
+
+<div class="page">
+    <div class="head">
+        <img class="logo" src="{% static 'media/Logo.png' %}" alt="Logo">
+        <p><h1 class="S">S</h1><h1>tream.IA</h1></p>
+    </div>
+
+    <div class="contenue">
+    {% block content %}
+
+    {% endblock %}
+    </div>
+</div>
+</body>
+
+</html>

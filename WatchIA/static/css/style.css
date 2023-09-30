@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; 
+    margin-top: 30%;
+}
+
+
+form {
+    margin-top: 10%;
+}
+
+p {
+    color: red;
+    font-family: Inter;
+}
+
+label {
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* 160% */
+}
+
+
+.prompt {
+    display: flex;
+    width: 528px;
+    height: 10px;
+    padding: 38px 50px;
+    align-items: center;
+    gap: 32px;
+    flex-shrink: 0;
+
+    border-radius: 36px;
+    border: 6px solid #000;
+    background: #FFF;
+    box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.40);
+    margin-bottom: 2%;
+    font-size: 32px;
+    color: black;
+    
+}
+
+.button {
+    position: relative;
+    margin-left: 33%;
+    padding: 12px 48px;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 1000px;
+    border: 6px solid #000;
+    background: #FFF;
+    box-shadow: 4px 8px 0px 0px #000;
+
+    font-size: 16px;
+    
+}

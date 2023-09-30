@@ -1,0 +1,40 @@
+<!-- recommendation/templates/recommendation/results.html -->
+{% load static %}
+<html>
+    <link rel="stylesheet" href="{% static 'css/results.css' %}">
+<head>
+    <title>Watch.IA</title>
+</head>
+<body>
+
+<div class="page">
+    <a href="{% url 'recommend_movies' %}">
+        <div class="head">
+            <img class="logo" src="{% static 'media/Logo.png' %}" alt="Logo">
+            <p><h1 class="S">S</h1><h1>tream.IA</h1></p>
+        </div>
+    </a>
+
+    <div class="resultat">
+        {% if recommended_movies %}
+            {% for film in recommended_movies %}
+                <div class="movie">
+                    {% if film.affiche %}
+                        <img class="poster" src="{{ film.affiche }}" alt="{{ film.titre }} Affiche">
+                    {% else %}
+                        <img class="poster" src="{% static 'media/affiche.png' %}" alt="Affiche générique">
+                    {% endif %}
+                    <div class="details">
+                        <h3 class="title">{{ film.titre }}</h3>
+                        <p class="description">{{ film.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+                <p>Aucun résultat n'a été trouvé</p>
+        {% endif %}
+    </div>
+</div>
+</body>
+
+</html>

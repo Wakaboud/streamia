@@ -1,0 +1,19 @@
+<!-- recommendation/templates/recommendation/recommend_movies.html -->
+{% extends 'watchia/basic.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<div class="container">
+
+    <form method="POST" action="{% url 'recommend_movies' %}">
+        {% csrf_token %}
+        <label for="prompt">Propose moi une série similaire à ...</label><br>
+        <input class="prompt" type="text" id="prompt" name="prompt" placeholder="Squid Game"<br><br>
+        <input class="button" type="submit" value="Regarder !">
+    </form>
+
+</div>
+
+{% endblock %}
