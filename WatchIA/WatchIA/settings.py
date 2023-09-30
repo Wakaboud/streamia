@@ -25,7 +25,7 @@ SECRET_KEY = '60h47&ak65-nc6#^stx$nd%$7y5!9j()$cz_&mx0f4o@iokso%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '193.203.169.218']
+ALLOWED_HOSTS = ['127.0.0.1', '193.203.169.218', 'streamia.fr']
 
 
 # Application definition
